@@ -1,0 +1,22 @@
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+#contact {
+  background-color: rgb(228, 226, 226);
+  padding: 1em 5em 2em 5em;
+  border-radius: 0.5em;
+}
+
+.jumbotron {
+  border-radius: 0.5em;
+}
+
+#reasons h3 {
+  font-size: 1.25em;
+}
+
+footer {
+  color: #eeeeee;
+}/*# sourceMappingURL=main.css.map */
