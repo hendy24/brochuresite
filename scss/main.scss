@@ -1,19 +1,65 @@
 $background-color: #ffffff;
+$secondary-background-color: #eeeeee;
 $main-font: #333333;
+$white: #ffffff;
+$black: #030303;
+$transparent-black-background: rgba(0,0,0,0.5);
+$orange: rgb(253, 165, 3);
 
 body {
     background-color: $background-color;
     color: $main-font;
+    font-family: "Gill Sans", sans-serif;
 }
 
-#contact {
-    background-color: rgb(228, 226, 226);
-    padding: 1em 5em 2em 5em;
-    border-radius: 0.5em;
+hr.header {
+    width: 40%;
+    border-top: 1px solid #363636;
+}
+
+hr.header-white {
+    width: 60%;
+    border-top: 0.25px solid #ffffff;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+#banner {
+    background: url("../images/design.jpg") no-repeat scroll center;
+    height: 40rem;
+
+    h1 {
+        color: $white;
+        text-shadow: 2px 2px $black;
+    }
+}
+
+#contact-form {
+    padding: 0.5em;
 }
 
 .jumbotron {
-    border-radius: 0.5em;
+    background-color: $transparent-black-background;
+    padding: 1em;
+    margin: 2em;
+    h2,p {
+        color: $white;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    
+}
+
+#services {
+
 }
 
 #reasons {
@@ -24,5 +70,5 @@ body {
 }
 
 footer {
-    color: #eeeeee;
+    color: $secondary-background-color;
 }

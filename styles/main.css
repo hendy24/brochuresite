@@ -1,16 +1,50 @@
 body {
   background-color: #ffffff;
   color: #333333;
+  font-family: "Gill Sans", sans-serif;
 }
 
-#contact {
-  background-color: rgb(228, 226, 226);
-  padding: 1em 5em 2em 5em;
-  border-radius: 0.5em;
+hr.header {
+  width: 40%;
+  border-top: 1px solid #363636;
+}
+
+hr.header-white {
+  width: 60%;
+  border-top: 0.25px solid #ffffff;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.text-orange {
+  color: rgb(253, 165, 3);
+}
+
+#banner {
+  background: url("../images/design.jpg") no-repeat scroll center;
+  height: 40rem;
+}
+#banner h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px #030303;
+}
+
+#contact-form {
+  padding: 0.5em;
 }
 
 .jumbotron {
-  border-radius: 0.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  margin: 2em;
+}
+.jumbotron h2, .jumbotron p {
+  color: #ffffff;
+}
+.jumbotron h2 {
+  font-size: 1.5em;
 }
 
 #reasons h3 {
