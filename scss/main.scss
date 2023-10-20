@@ -12,6 +12,23 @@ body {
     font-family: "Gill Sans", sans-serif;
 }
 
+@media (max-width: 575px) {
+    .card {
+        margin: 10px 5px;
+    }
+    .card-img-top {
+        height: auto !important;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        height: 20vw;
+        object-fit: cover;
+    }
+}
+
 hr.header {
     width: 40%;
     border-top: 1px solid #363636;
@@ -31,7 +48,7 @@ h1, h2, h3 {
 }
 
 #banner {
-    background: url("../images/design.jpg") no-repeat scroll center;
+    background: url("../images/drywall-banner.jpg") no-repeat scroll bottom;
     height: 40rem;
 
     h1 {
@@ -58,7 +75,7 @@ h1, h2, h3 {
     
 }
 
-#services {
+#our-services {
 
 }
 
