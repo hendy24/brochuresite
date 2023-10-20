@@ -21,6 +21,7 @@
     // Set site specific info
     $company = "Wichita Falls Drywall";
     $phone = "(490) 555-5555";
+    $sendToEmail = "kemish.hendershot@gmail.com";
 
 
     

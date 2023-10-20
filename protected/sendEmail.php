@@ -11,15 +11,15 @@ require 'vendor/PHPMailer/src/SMTP.php';
 $mail = new PHPMailer();
 
 // Configure an SMTP
-$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 $mail->isSMTP();
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'smtp.oxcs.bluehost.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'kemish.hendershot@gmail.com';
-$mail->Password = '%fp6wZRJFKDj4Agr';
+$mail->Username = 'kemish@boulderbros.co';
+$mail->Password = '!thhVWjgk7gMe6!';
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-$mail->Port = 465;
+$mail->Port = 587;
 
 // Recipients
-$mail->addAddress('kemish.hendershot@gmail.com', 'Website Admin');
-$mail->addReplyTo('info@example.com');
+$mail->addAddress($sendToEmail, 'Website Admin');
+//$mail->addReplyTo('info@example.com');
