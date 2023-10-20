@@ -7,5 +7,5 @@
     require('template/header.php');
     // Display the page based on the url
     // Everything runs through the index.php page
-    require("pages/" . $page);
+    require($docroot . "/pages/" . $page);
     require('template/footer.php');

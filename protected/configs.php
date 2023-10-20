@@ -1,7 +1,9 @@
 <?php
 
     // Set variables
-    $siteurl = "http://" . $_SERVER['SERVER_NAME'];
+    $siteurl = "https://" . $_SERVER['SERVER_NAME'];
+
+    $docroot = $_SERVER['DOCUMENT_ROOT'];
 
     // Get the page name to display the correct page
     $page =  str_replace('/',"", $_SERVER['REQUEST_URI']) . '.php';
