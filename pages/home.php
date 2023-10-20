@@ -10,7 +10,7 @@
             <div class="col-md-5">
                 <div class="jumbotron">
                     <h2>Drywall Contractor <br>Wichita Falls, TX </h2>
-                    <p class="text-justify">Welcome to Wichita Falls Drywall, your premier destination for all things drywall. As your trusted drywall contractor, we specialize in every aspect of drywall services, from expert drywall installation to meticulous drywall tape application, seamless drywall repair, and customized drywall texture finishes. With a commitment to quality, we are dedicated to transforming your space with flawless drywall solutions. Learn how Wichita Falls Drywall can bring your vision to life for your home or project.</p>
+                    <p class="text-justify">Welcome to Wichita Falls Drywall, your top choice for expert drywall services. From installation to repair and custom finishes, we bring your vision to life.</p>
                 </div>
             </div>
         </div>
