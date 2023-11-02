@@ -1,4 +1,10 @@
 <?php
+
+    // Set variables
+    $siteurl = "https://" . $_SERVER['SERVER_NAME'];
+
+    $docroot = $_SERVER['DOCUMENT_ROOT'];
+
     // Get the page name to display the correct page
     $page =  str_replace('/',"", $_SERVER['REQUEST_URI']) . '.php';
 
@@ -7,8 +13,17 @@
         $page = strtok($page, '?') . ".php";
     }
 
+    // if $page is empty then display the home page
     if ($page == '.php') {
         $page = "home.php";
     };
+
+    // Set site specific info
+    $company = "TBC Construction";
+    $phone = "(385) 323-2290";
+    $sendToEmail = "kemish@tbcutah.com";
+
+
+    
 
   
