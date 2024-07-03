@@ -1,10 +1,4 @@
-body {
-  background-color: #ffffff;
-  color: #333333;
-  font-family: "Gill Sans", sans-serif;
-}
-
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .card {
     margin: 10px 5px;
   }
@@ -12,12 +6,17 @@ body {
     height: auto !important;
     object-fit: cover;
   }
-}
-@media (min-width: 768px) {
-  .card-img-top {
-    height: 20vw;
-    object-fit: cover;
+  #banner h1 {
+    font-size: 200%;
   }
+  footer h2 {
+    font-size: 150%;
+  }
+}
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Gill Sans", sans-serif;
 }
 
 .navbar-brand {
@@ -44,14 +43,13 @@ h1, h2, h3 {
 }
 
 #banner {
-  background: url("../images/floor_framing.jpg") no-repeat scroll center center;
+  background: url("../images/floor_framing.jpg") no-repeat scroll center;
   background-size: cover;
-  height: 40rem;
 }
 #banner h1 {
   color: #ffffff;
-  font-weight: 350;
-  text-shadow: 3px 3px #030303;
+  text-shadow: 2px 2px #030303;
+  font-size: 400%;
 }
 
 #contact-form {
@@ -70,10 +68,20 @@ h1, h2, h3 {
   font-size: 1.5em;
 }
 
+.card-img-top {
+  width: auto;
+  max-height: 28vh;
+  object-fit: cover;
+}
+
 #reasons h3 {
   font-size: 1.25em;
 }
 
 footer {
   color: #eeeeee;
+}
+footer h2 {
+  font-size: 400%;
+  font-weight: 100;
 }/*# sourceMappingURL=main.css.map */

@@ -2,6 +2,8 @@
     // Load config files and functions
     include('protected/functions.php');
     include('protected/configs.php');
+    require_once('protected/Libs/MySqlDb.php');
+    // require('protected/database.php');
         
     // Display the page content
     require('template/header.php');

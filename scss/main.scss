@@ -6,10 +6,38 @@ $black: #030303;
 $transparent-black-background: rgba(0,0,0,0.5);
 $orange: rgb(253, 165, 3);
 
+
+@media (max-width: 768px) {
+    .card {
+        margin: 10px 5px;
+    }
+    .card-img-top {
+        height: auto !important;
+        object-fit: cover;
+    }
+
+    #banner {
+        h1 {
+            font-size: 200%;
+        }
+    }
+
+    footer {
+        h2 {
+            font-size: 150%;
+        }
+    }
+}
+
 body {
     background-color: $background-color;
     color: $main-font;
     font-family: "Gill Sans", sans-serif;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 2em;
 }
 
 hr.header {
@@ -31,12 +59,13 @@ h1, h2, h3 {
 }
 
 #banner {
-    background: url("../images/design.jpg") no-repeat scroll center;
-    height: 40rem;
+    background: url("../images/floor_framing.jpg") no-repeat scroll center;
+    background-size: cover;
 
     h1 {
         color: $white;
         text-shadow: 2px 2px $black;
+        font-size: 400%;
     }
 }
 
@@ -58,9 +87,12 @@ h1, h2, h3 {
     
 }
 
-#services {
-
+.card-img-top {
+    width: auto;
+    max-height: 28vh;
+    object-fit: cover;
 }
+
 
 #reasons {
 
@@ -71,4 +103,9 @@ h1, h2, h3 {
 
 footer {
     color: $secondary-background-color;
+
+    h2 {
+        font-size: 400%;
+        font-weight: 100;
+    }
 }
