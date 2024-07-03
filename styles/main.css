@@ -74,6 +74,11 @@ h1, h2, h3 {
   object-fit: cover;
 }
 
+.blank-space {
+  height: 100%;
+  min-height: 200px;
+}
+
 #reasons h3 {
   font-size: 1.25em;
 }
@@ -84,4 +89,6 @@ footer {
 footer h2 {
   font-size: 400%;
   font-weight: 100;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
