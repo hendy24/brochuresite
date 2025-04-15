@@ -7,14 +7,14 @@
         <label for="email">Email</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label for="location">City</label>
         <input type="text" class="form-control" id="location" name="location" placeholder="City">
-    </div>
+    </div> -->
 
     <div class="form-group">
-        <label for="message">Project Details</label>
-            <textarea class="form-control" id="message" rows="5" name="message" placeholder="Tell me about your project..."></textarea>
+        <label for="message">Business Info</label>
+            <textarea class="form-control" id="message" rows="5" name="message" placeholder="Tell me a little about how we might be able to help..."></textarea>
     </div>
     <button type="submit" class="btn btn-info float-right">Submit</button>
 </form>
