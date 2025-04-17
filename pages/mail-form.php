@@ -9,7 +9,7 @@
         $mail->isHTML(true);
         $mail->Subject = "Website contact inquiry";
         $mail->Body = 
-            "From: " . input()['name'] . "<br>Email: " . input()['email'] . "<br>City: " . input()['location'] . "<br>Message:<br>" . input()['message'];
+            "From: " . input()['name'] . "<br>Email: " . input()['email'] . "<br>City: " . "<br>Message:<br>" . input()['message'];
     
         $mail->send();
         $message = 'Message has been sent';
@@ -17,7 +17,7 @@
         $message = "Message could not be sent.";
     }
 
-    header("refresh:5;url=home");
+    // header("refresh:5;url=home");
     ?>
     <br><br><br><br>
     <div class="row my-5">

@@ -11,14 +11,15 @@ require 'vendor/PHPMailer/src/SMTP.php';
 $mail = new PHPMailer();
 
 // Configure an SMTP
-// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+//$mail->SMTPDebug = 3; //Alternative to above constant
 $mail->isSMTP();
-$mail->Host = 'smtp.mail.us-west-2.awsapps.com';
+$mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'kemish@tbcutah.com';
-$mail->Password = 'v7XMr*v4A!CFHmir';
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-$mail->Port = 465;
+$mail->Username = 'kemish.hendershot@gmail.com';
+$mail->Password = 'tkes qrvi gqji cumn';
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
 
 // Recipients
 $mail->addAddress('kemish.hendershot@gmail.com', 'Website Admin');
