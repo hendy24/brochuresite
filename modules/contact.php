@@ -16,5 +16,6 @@
         <label for="message">Business Info</label>
             <textarea class="form-control" id="message" rows="5" name="message" placeholder="Tell me a little about how we might be able to help..."></textarea>
     </div>
+    <input type="text" name="website" style="display:none">
     <button type="submit" class="btn btn-info float-right">Submit</button>
 </form>
