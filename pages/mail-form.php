@@ -1,8 +1,7 @@
 <?php
     require 'protected/sendEmail.php';
 
-    if (input()['website'] != '') {
-
+    if (input()['website'] == '') {
         try {
             // Email from
             $mail->setFrom("kemish@tbcutah.com", "TBC Website");
@@ -22,7 +21,7 @@
         $message = "Message could not be sent.";
     }
 
-    // header("refresh:5;url=home");
+    header("refresh:5;url=home");
     ?>
     <br><br><br><br>
     <div class="row my-5">
