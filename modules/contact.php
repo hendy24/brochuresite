@@ -1,11 +1,11 @@
-<form id="contact-form" action="mail-form">
+<form id="contact-form" class="needs-validation" action="mail-form">
     <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
     </div>
     <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
     </div>
     <!-- <div class="form-group">
         <label for="location">City</label>
