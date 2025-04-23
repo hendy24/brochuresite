@@ -38,6 +38,15 @@
                     <li class="nav-item <?php echo ($page == 'for-builders.php') ? 'active' : '';?>">
                         <a class="nav-link" href="/for-builders">For Builders</a>
                     </li>
+                    <!-- Nav Item with Dropdown -->
+                    <li class="nav-item dropdown">
+                        <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
+                            Our Communities
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/priority-homes">Loveless Estates</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item <?php echo ($page == 'home-buyers.php') ? 'active' : '';?>">
                         <a class="nav-link" href="/home-buyers">Home Buyers</a>
                     </li>

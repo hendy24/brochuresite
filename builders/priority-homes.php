@@ -11,13 +11,13 @@
 <section class="py-5">
     <div class="container">
         <div class="row align-items-center">
-        <div class="col-md-4 text-center">
-            <img src="/images/builders/priorityhomes/priorityhomes_logo.png" alt="Priority Homes Logo" class="img-fluid mb-3" style="max-height: 100px;">
-        </div>
-        <div class="col-md-8">
-            <h2 class="text-left">About Priority Homes</h2>
-            <p>Priority Homes is a trusted Central Utah builder committed to delivering high-quality, thoughtfully designed homes that stand the test of time. With a focus on craftsmanship, comfort, and community, we’re proud to build homes for families in Nephi and beyond.</p>
-        </div>
+            <div class="col-md-4 text-center">
+                <img src="/images/builders/priorityhomes/priorityhomes_logo.png" alt="Priority Homes Logo" class="img-fluid mb-3" style="max-height: 100px;">
+            </div>
+            <div class="col-md-8 mt-3">
+                <h2 class="text-left">About Priority Homes</h2>
+                <p>Priority Homes is a trusted Central Utah builder committed to delivering high-quality, thoughtfully designed homes that stand the test of time. With a focus on craftsmanship, comfort, and community, we’re proud to build homes for families in Nephi and beyond.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -53,7 +53,7 @@
                 </ul>
             </div>
             <div class="col-md-3">
-                <ul>
+                <ul class="list-unstyled mb-5">
                     <li>✔️ Granite countertops, LVP flooring</li>
                     <li>✔️ Energy-efficient construction</li>
                     <li>✔️ Easy access to I-15</li>
@@ -70,8 +70,11 @@
 <section id="floorplan" class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <img src="/images/builders/priorityhomes/floorplan.png" alt="Loveless Floorplan" style="max-height: 350px" class="img-fluid rounded shadow-sm float-right">
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-2 my-5">
+                <img src="/images/builders/priorityhomes/floorplan.png" alt="Loveless Floorplan" style="max-height: 350px" class="img-fluid rounded shadow-sm">
             </div>
             <div class="col-md-8">
                 <h2 class="mb-4 text-left">Available Floorplan</h2>

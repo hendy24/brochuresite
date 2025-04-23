@@ -19,6 +19,18 @@ body {
   font-family: "Gill Sans", sans-serif;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .dropdown .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+}
 h1, h2, h3 {
   text-align: center;
 }
