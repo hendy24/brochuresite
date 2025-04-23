@@ -9,5 +9,10 @@
     require('template/header.php');
     // Display the page based on the url
     // Everything runs through the index.php page
-    require("pages/" . $page);
+    if (file_exists('pages/' . $page)) {
+        require("pages/" . $page);
+    } else {
+        require("builders/" . $page);
+    }
+    
     require('template/footer.php');

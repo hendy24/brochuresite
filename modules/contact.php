@@ -13,7 +13,7 @@
     </div> -->
 
     <div class="form-group">
-        <label for="message">Business Info</label>
+        <label for="message">Message</label>
             <textarea class="form-control" id="message" rows="5" name="message" placeholder="Tell me a little about how we might be able to help..."></textarea>
     </div>
     <input type="text" name="website" style="display:none">
