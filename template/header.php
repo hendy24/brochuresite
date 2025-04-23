@@ -1,7 +1,7 @@
 <?php 
     $currentPage = basename($_SERVER['PHP_SELF']);
     if ($currentPage == 'index.php') {
-        $pageTitle = '';
+        $pageTitle = 'Utah New Construction Experts';
     }
 ?>
 
@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TBC Real Estate | Utah New Construction Experts</title>
+    <title>TBC Real Estate | <?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

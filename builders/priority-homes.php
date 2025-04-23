@@ -1,3 +1,5 @@
+<?php $pageTitle = 'Builder Partner Info'; ?>
+
 <!-- Hero Section with Full-Width Background Image -->
 <section class="text-white d-flex align-items-center justify-content-center" style="background: url('/images/builders/priorityhomes/exterior.jpg') center center / cover no-repeat; height: 75vh;">
     <div class="container text-center">
@@ -110,13 +112,13 @@
                 </tr>
 
                 <tr>
-                    <td>808 N 200 W #17, Nephi, UT 84648</td>
+                    <td><a href="https://www.utahrealestate.com/2061180" target="blank">808 N 200 W #17, Nephi, UT 84648</a></td>
                     <td>Available</td>
                     <td>Move-in Ready</td>
                     <td>$389,900</td>
                 </tr>
                 <tr>
-                    <td>812 N 200 W #16, Nephi, UT 84648</td>
+                    <td><a href="https://www.utahrealestate.com/2068843" target="blank">812 N 200 W #16, Nephi, UT 84648</a></td>
                     <td>Available</td>
                     <td>Move-in Ready</td>
                     <td>$389,900</td>
