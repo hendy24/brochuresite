@@ -1,29 +1,47 @@
 <?php
+declare(strict_types=1);
 
-    // Set variables
-    $siteurl = "https://" . $_SERVER['SERVER_NAME'];
+// ───────────────────────────────────────────────────────────────────────────────
+// 1) BASE CONSTANTS
+// ───────────────────────────────────────────────────────────────────────────────
+define('DOC_ROOT',           realpath($_SERVER['DOCUMENT_ROOT']) ?: '');
+define('BASE_URL',           rtrim(
+    (
+        // behind proxies?
+        (!empty($_SERVER['HTTP_X_FORWARDED_PROTO'])
+            ? $_SERVER['HTTP_X_FORWARDED_PROTO']
+            : (($_SERVER['HTTPS'] ?? 'off') !== 'off' || $_SERVER['SERVER_PORT'] == 443
+                ? 'https'
+                : 'http')
+        )
+        . '://' . ($_SERVER['HTTP_HOST'] ?? '')
+    ),
+    '/'
+));
 
-    $docroot = $_SERVER['DOCUMENT_ROOT'];
+// ───────────────────────────────────────────────────────────────────────────────
+// 2) REQUEST SLUG (no “.php” or “.json” — let your front-controller decide)
+// ───────────────────────────────────────────────────────────────────────────────
+$rawPath = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?: '/';
+$slug    = trim($rawPath, '/');           // "/about/team/" → "about/team"
+$slug    = basename($slug) ?: 'home';      // keep only last segment, default to home
+// sanitize to letters, numbers, dash, underscore
+$page    = preg_replace('/[^a-zA-Z0-9_-]/', '', $slug);
 
-    // Get the page name to display the correct page
-    $page =  str_replace('/',"", $_SERVER['REQUEST_URI']) . '.php';
+// expose $page for index.php
+// ───────────────────────────────────────────────────────────────────────────────
 
-    // if this is a post or get then get the page before the ?
-    if (str_contains($page,'?')) {
-        $page = strtok($page, '?') . ".php";
-    }
+// ───────────────────────────────────────────────────────────────────────────────
+// 3) SITE-SPECIFIC SETTINGS
+// ───────────────────────────────────────────────────────────────────────────────
+define('COMPANY_NAME',       'TBC Real Estate');
+define('COMPANY_PHONE',      '(385) 323-2290');
+define('CONTACT_EMAIL',      'kemish@tbcutah.com');
 
-    // if $page is empty then display the home page
-    if ($page == '.php') {
-        $page = "home.php";
-    };
-
-    // Set site specific info
-    $company = "TBC Construction";
-    $phone = "(385) 323-2290";
-    $sendToEmail = "kemish@tbcutah.com";
-
-
-    
-
-  
+// ───────────────────────────────────────────────────────────────────────────────
+// 4) (Optional) Environment & debug flags
+// ───────────────────────────────────────────────────────────────────────────────
+if (!defined('APP_ENV')) {
+    define('APP_ENV', getenv('APP_ENV') ?: 'production');
+}
+define('DEBUG', APP_ENV !== 'production');

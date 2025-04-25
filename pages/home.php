@@ -25,7 +25,7 @@
             <div class="col-md-4">
                 <h3>Our Areas</h3>
                 <img src="../images/our_areas.png" style="width: 90%; height: auto;" alt="Our Service Areas Image"> 
-                <p class="mt-2">We have currently have agents in Weber, Davis, Salt Lake, Summit, Wasatch, Utah, Juab, and Washington Counties. <a href="/our-service-areas">More Info...</a></p>          
+                <p class="mt-2">We have currently have agents in Weber, Davis, Salt Lake, Summit, Wasatch, Utah, Juab, and Washington Counties. <a href="/areas-we-serve">More Info...</a></p>          
             </div>
             <div class="col-md-4">
                 <h3>Connect with Us</h3>

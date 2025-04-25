@@ -1,4 +1,13 @@
-<?php $pageTitle = 'Builder Partner Info'; ?>
+<?php
+    try {        
+        $homeInfo = getJsonData(
+            DOC_ROOT . '/builders/data_files/loveless_estates.json'
+        );
+    } catch (Throwable $e) {
+        error_log($e->getMessage());
+        $homeInfo = []; // fallback
+    }    
+?>
 
 <!-- Hero Section with Full-Width Background Image -->
 <section class="text-white d-flex align-items-center justify-content-center" style="background: url('/images/builders/priorityhomes/exterior.jpg') center center / cover no-repeat; height: 75vh;">
@@ -104,25 +113,26 @@
                 </tr>
             </thead>
             <tbody>
+            <?php foreach ($homeInfo as $home): ?>
                 <tr>
-                    <td>843 N 200 W #25, Nephi, UT 84648</td>
-                    <td>Under Contract</td>
-                    <td>Move-in Ready</td>
-                    <td>$389,900</td>
+                    <td>
+                    <?php
+                        $address = htmlspecialchars($home['Street Address'], ENT_QUOTES);
+                        $city    = htmlspecialchars($home['City/State'], ENT_QUOTES);
+                    ?>
+                    <?php if (!empty($home['MLS'])): ?>
+                        <a href="<?php echo htmlspecialchars($home['MLS'], ENT_QUOTES); ?>" target="_blank" rel="noopener">
+                        <?php echo $address . ', ' . $city; ?>
+                        </a>
+                    <?php else: ?>
+                        <?php echo $address . ', ' . $city; ?>
+                    <?php endif; ?>
+                    </td>
+                    <td><?php echo htmlspecialchars($home['Status'], ENT_QUOTES); ?></td>
+                    <td><?php echo htmlspecialchars($home['Est Completion'], ENT_QUOTES); ?></td>
+                    <td><?php echo htmlspecialchars($home['Price'], ENT_QUOTES); ?></td>
                 </tr>
-
-                <tr>
-                    <td><a href="https://www.utahrealestate.com/2061180" target="blank">808 N 200 W #17, Nephi, UT 84648</a></td>
-                    <td>Available</td>
-                    <td>Move-in Ready</td>
-                    <td>$389,900</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.utahrealestate.com/2068843" target="blank">812 N 200 W #16, Nephi, UT 84648</a></td>
-                    <td>Available</td>
-                    <td>Move-in Ready</td>
-                    <td>$389,900</td>
-                </tr>
+            <?php endforeach; ?>
             <!-- Add more rows as needed -->
             </tbody>
         </table>
