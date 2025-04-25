@@ -1,6 +1,6 @@
 <!-- Full-width banner with heading -->
 <div class="container-fluid p-0">
-    <div class="position-relative" style="height: 500px; background-image: url('../images/buyer_banner.png'); background-size: cover; background-position: top;">
+    <div class="position-relative" style="height: 500px; background-image: url('../images/buyer_banner.webp'); background-size: cover; background-position: top;">
         <div class="d-flex justify-content-center align-items-center text-white text-center"
         style="height: 100%; position: relative; z-index: 2;">
             <h1 class="display-4 fw-bold text-center">Helping You Find the Right Builder</h1>

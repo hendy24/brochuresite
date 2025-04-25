@@ -10,7 +10,7 @@
 ?>
 
 <!-- Hero Section with Full-Width Background Image -->
-<section class="text-white d-flex align-items-center justify-content-center" style="background: url('/images/builders/priorityhomes/exterior.jpg') center center / cover no-repeat; height: 75vh;">
+<section class="text-white d-flex align-items-center justify-content-center" style="background: url('/images/builders/priorityhomes/exterior.webp') center center / cover no-repeat; height: 75vh;">
     <div class="container text-center">
         <h1 class="display-4 fw-bold">Loveless Estates by Priority Homes</h1>
         <p class="lead">Modern townhomes in Nephi, Utah</p>
@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
-                <img src="/images/builders/priorityhomes/priorityhomes_logo.png" alt="Priority Homes Logo" class="img-fluid mb-3" style="max-height: 100px;">
+                <img src="/images/builders/priorityhomes/priorityhomes_logo.webp" alt="Priority Homes Logo" class="img-fluid mb-3" style="max-height: 100px;">
             </div>
             <div class="col-md-8 mt-3">
                 <h2 class="text-left">About Priority Homes</h2>
@@ -40,15 +40,15 @@
 
         <div class="row text-center">
             <div class="col-md-4 mb-4">
-                <img src="/images/builders/priorityhomes/living_room.jpg" alt="Living Room" class="img-fluid rounded shadow-sm">
+                <img src="/images/builders/priorityhomes/living_room.webp" alt="Living Room" class="img-fluid rounded shadow-sm">
                 <p class="mt-2">Open Living Areas</p>
             </div>
             <div class="col-md-4 mb-4">
-                <img src="/images/builders/priorityhomes/kitchen.jpg" alt="Kitchen" class="img-fluid rounded shadow-sm">
+                <img src="/images/builders/priorityhomes/kitchen.webp" alt="Kitchen" class="img-fluid rounded shadow-sm">
                 <p class="mt-2">Modern Kitchens</p>
             </div>
             <div class="col-md-4 mb-4">
-                <img src="/images/builders/priorityhomes/primary_bedroom.jpg" alt="Primary Bedroom" class="img-fluid rounded shadow-sm">
+                <img src="/images/builders/priorityhomes/primary_bedroom.webp" alt="Primary Bedroom" class="img-fluid rounded shadow-sm">
                 <p class="mt-2">Spacious Primary Suite</p>
             </div>
         </div>
@@ -85,7 +85,7 @@
                 &nbsp;
             </div>
             <div class="col-md-2 my-5">
-                <img src="/images/builders/priorityhomes/floorplan.png" alt="Loveless Floorplan" style="max-height: 350px" class="img-fluid rounded shadow-sm">
+                <img src="/images/builders/priorityhomes/floorplan.webp" alt="Loveless Floorplan" style="max-height: 350px" class="img-fluid rounded shadow-sm">
             </div>
             <div class="col-md-8">
                 <h2 class="mb-4 text-left">Available Floorplan</h2>
