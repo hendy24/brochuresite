@@ -59,14 +59,14 @@
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" name="email" required />
+                  <input type="email" class="form-control" id="email" name="email" required />             
               </div>
               <div class="mb-3">
                 <label for="phone" class="form-label">Phone Number</label>
-                <input type="tel" class="form-control" id="phone" name="phone" required />
+                <input type="tel" class="form-control" id="phone" name="phone" required pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" placeholder="e.g. 801-555-1234" title="Enter a valid phone number like 801-555-1234" />
               </div>
               <button type="submit" class="btn btn-primary w-100">Submit</button>
-              <div id="thankYouMessage" class="alert alert-success mt-3 d-none" role="alert">
+              <div id="thankYouMessage" class="alert alert-primary mt-3 d-none" role="alert">
                 Thank you! We’ll be in touch soon.
               </div>
             </form>
