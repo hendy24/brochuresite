@@ -1,12 +1,28 @@
 <!-- Hero Section -->
-<section class="text-center py-5 bg-primary text-white">
-  <div class="container">
-    <h1 class="display-4 fw-bold">End of School Promotion</h1>
-    <p class="lead">Lock in your new home with rates as low as <strong>5.25% (FHA)</strong> or <strong>5.75% (Conventional)</strong> on a 30-year mortgage.</p>
-    <p>Take advantage of this limited-time offer and get settled before summer ends.</p>
+<section class="py-5 text-white" style="background: linear-gradient(135deg, #0d6efd, #0b5ed7);">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold mb-3">End of School Promotion</h1>
+    <p class="lead mb-4">
+      Move into a beautiful 3-bedroom, 2-bath townhome with <strong>2,580 sq ft</strong> of thoughtfully designed living space — all for just <strong>$399,000</strong>.
+    </p>
+    
+    <div class="d-flex justify-content-center mb-4 flex-wrap gap-3">
+      <div class="bg-white text-dark px-4 py-3 rounded shadow-sm">
+        <strong>5.25%</strong><br>30-Year FHA Rate
+      </div>
+      <div class="bg-white text-dark px-4 py-3 rounded shadow-sm">
+        <strong>5.75%</strong><br>30-Year Conventional Rate
+      </div>
+      <div class="bg-white text-dark px-4 py-3 rounded shadow-sm">
+        <strong>$399,000</strong><br>Sales Price
+      </div>
+    </div>
+
+    <p class="mb-0">
+      Secure your new home before summer ends — rates are limited, and homes are going fast.
+    </p>
   </div>
 </section>
-
 <!-- House Photo Carousel -->
 <section class="py-5 bg-light">
   <div class="container">
@@ -38,15 +54,26 @@
     <div class="row align-items-center">
       <!-- Promo Text -->
       <div class="col-lg-6 mb-4 mb-lg-0">
-        <h2 class="fw-bold">Your Path to Affordable Homeownership</h2>
-        <ul class="list-group list-group-flush mt-3">
-          <li class="list-group-item">✅ 30-Year FHA Loan @ <strong>5.25%</strong></li>
-          <li class="list-group-item">✅ 30-Year Conventional Loan @ <strong>5.75%</strong></li>
-          <li class="list-group-item">✅ Beautiful townhomes in Nephi, Utah</li>
-          <li class="list-group-item">✅ Move-in ready — close before summer ends!</li>
+        <h2 class="fw-bold mb-3">Smart Financing. Stunning Living.</h2>
+        <p class="text-muted">
+          Discover the perfect blend of comfort, space, and affordability in Nephi’s premier townhome community. With competitive financing and homes ready for move-in, now is the time to make your move.
+        </p>
+        
+        <ul class="list-group list-group-flush mt-4">
+          <li class="list-group-item px-0">
+            <span class="fw-semibold text-dark">📉 30-Year FHA Loan:</span> Locked rate at <strong>5.25%</strong>
+          </li>
+          <li class="list-group-item px-0">
+            <span class="fw-semibold text-dark">💼 30-Year Conventional Loan:</span> Fixed at <strong>5.75%</strong>
+          </li>
+          <li class="list-group-item px-0">
+            <span class="fw-semibold text-dark">📍 Location:</span> Beautiful, peaceful Nephi, Utah
+          </li>
+          <li class="list-group-item px-0">
+            <span class="fw-semibold text-dark">🚚 Availability:</span> Move-in ready — close before summer ends
+          </li>
         </ul>
       </div>
-
       <!-- Lead Capture Form -->
       <div class="col-lg-6">
         <div class="card shadow">
