@@ -23,29 +23,49 @@
     </p>
   </div>
 </section>
-<!-- House Photo Carousel -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <div id="homeCarousel" class="carousel slide shadow" data-bs-ride="carousel">
-      <div class="carousel-inner rounded">
-        <div class="carousel-item active">
-          <img src="<?php echo IMAGES; ?>/exterior.webp" class="d-block w-100" alt="Front exterior view of home">
+<!-- Carousel Section Without Stretching -->
+<section class="py-4 bg-light border-top border-bottom">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- Carousel -->
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
+            <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="<?php echo IMAGES; ?>/exterior.webp" class="d-block w-100 h-100 object-fit-cover" alt="Front exterior view of home">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo IMAGES; ?>/kitchen.webp" class="d-block w-100 h-100 object-fit-cover" alt="Modern kitchen with island">
+                </div>
+                <div class="carousel-item">
+                  <img src="<?php echo IMAGES; ?>/living_room.webp" class="d-block w-100 h-100 object-fit-cover" alt="Bright living room interior">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="<?php echo IMAGES; ?>/kitchen.webp" class="d-block w-100" alt="Modern kitchen with island">
-        </div>
-        <div class="carousel-item">
-          <img src="<?php echo IMAGES; ?>/living_room.webp" class="d-block w-100" alt="Bright living room interior">
+
+        <!-- Promo & Logo -->
+        <div class="col-lg-4 text-center text-lg-start">
+          <div class="text-center mb-5">
+            <img src="<?php echo IMAGES; ?>/logo.webp" alt="Priority Homes Logo" style="max-height: 75px;">
+          </div>
+          <p class="fs-5 fw-semibold text-dark mb-2">
+            This exclusive offer is only available through <strong>Priority Homes</strong>.
+          </p>
+          <p class="text-danger fw-bold mb-0">
+            ⏳ Offer ends May 31st — don’t miss your chance!
+          </p>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
-  </div>
 </section>
 
 <!-- Details & Form -->
