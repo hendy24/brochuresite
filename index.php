@@ -5,10 +5,6 @@ declare(strict_types=1);
 require_once __DIR__ . '/protected/functions.php';
 require_once __DIR__ . '/protected/configs.php';  // defines $page from REQUEST_URI
 
-$requestPath = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
-if ($requestPath === '') {
-    $requestPath = 'home';
-}
 
 // 2) Allowlisted pages or valid file fallback
 $standardContent = __DIR__ . '/pages/' . $page . '.php';
@@ -22,8 +18,8 @@ if (!file_exists($standardContent) && !file_exists($landingContent)) {
 // 3) Page Titles and Meta (optional customization)
 switch ($page) {
     case 'home':
-        $pageTitle = 'Juab County Home Builders';
-        $metaTag = '';
+        $pageTitle = 'New Townhomes for Sale in Nephi, Utah | Priority Homes';
+        $metaTag = 'Explore modern, energy-efficient townhomes in Nephi’s Loveless Estates. Discover your dream home with Priority Homes today.';
         break;
     case 'contact-us':
         $pageTitle = 'Contact Priority Homes';
