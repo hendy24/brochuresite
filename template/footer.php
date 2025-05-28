@@ -9,7 +9,7 @@
                         <h2 class="display-4 text-dark text-center">385.323.2290</h2>
                     </div>
                     <div class="col-lg-4 col-md-12 mb-5">
-                        <img class="text-center" src="<?php echo IMAGES; ?>/real_logo.webp" width="80%" alt="Real Broker Logo">
+                        <img class="text-center" src="<?php echo IMAGES; ?>/real_logo_black.webp" width="55%" alt="Real Broker Logo">
                     </div>
                 </div>
                 <p class="mb-0 text-muted">&copy; <?php echo date('Y'); ?> <?php echo COMPANY_NAME; ?>. &nbsp;All rights reserved.<br>State Brokerage Name: Real Broker, LLC</p>
