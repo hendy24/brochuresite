@@ -61,7 +61,7 @@
             This exclusive offer is only available through <strong>Priority Homes</strong>.
           </p>
           <p class="text-danger fw-bold mb-0">
-            ⏳ Offer ends May 31st — don’t miss your chance!
+            ⏳ Offer ends June 15th — don’t miss your chance!
           </p>
         </div>
       </div>
@@ -99,7 +99,7 @@
         <div class="card shadow">
           <div class="card-body">
             <h3 class="card-title text-center mb-4">Get More Info</h3>
-            <form id="leadForm">
+            <form id="leadForm" onsubmit="submitLeadForm(event)">
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="name" name="name" required />
@@ -110,7 +110,7 @@
               </div>
               <div class="mb-3">
                 <label for="phone" class="form-label">Phone Number</label>
-                <input type="tel" class="form-control" id="phone" name="phone" required pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" placeholder="e.g. 801-555-1234" title="Enter a valid phone number like 801-555-1234" />
+                <input type="tel" class="form-control" id="phone" name="phone" required pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$" placeholder="e.g. (801) 555-1234" title="Enter a valid phone number like (801) 555-1234" />
               </div>
               <button type="submit" class="btn btn-primary w-100">Submit</button>
               <div id="thankYouMessage" class="alert alert-primary mt-3 d-none" role="alert">
@@ -125,23 +125,67 @@
 </section>
 
 <script>
-  const form = document.getElementById("leadForm");
+  const leadScriptURL = "https://script.google.com/macros/s/AKfycbxrxvNRBBaXrxNiNGe9WWaySIKeZMuxRaAe-7aFoCUS39dAXTPbIWB27GAjjiihmdDk/exec";
+
+  document.getElementById("phone").addEventListener("input", function (e) {
+    formatPhoneInput(e.target);
+  });
+
+  function formatPhoneInput(input) {
+    const digits = input.value.replace(/\D/g, '').substring(0, 10);
+    let formatted = '';
+    if (digits.length > 0) formatted = '(' + digits.substring(0, 3);
+    if (digits.length >= 4) formatted += ') ' + digits.substring(3, 6);
+    if (digits.length >= 7) formatted += '-' + digits.substring(6, 10);
+    input.value = formatted;
+  }
+
   const thankYouMessage = document.getElementById("thankYouMessage");
 
-  form.addEventListener("submit", async (e) => {
+  async function submitLeadForm(e) {
     e.preventDefault();
 
+    const form = document.getElementById("leadForm");
+    const email = form.email.value.trim();
+    const phone = form.phone.value.trim();
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+
+    if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!phonePattern.test(phone)) {
+      alert("Please enter a valid phone number in the format (xxx) xxx-xxxx.");
+      return;
+    }
+
     const formData = new FormData(form);
-    const payload = Object.fromEntries(formData.entries());
+    const payload = new URLSearchParams();
+    for (const pair of formData.entries()) {
+      payload.append(pair[0], pair[1]);
+    }
 
-    await fetch("https://script.google.com/a/macros/thekatalyst.group/s/AKfycbyU4IfVAzvhaU4MxXX6cteb6ZSgAcEKw4uYkpmMWn0BYsLIssterRQzOncWrOzhvY8G/exec", {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+    try {
+      await fetch(leadScriptURL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: payload.toString()
+      });
 
-    form.reset();
-    thankYouMessage.classList.remove("d-none");
-  });
+      // We assume it succeeded, because we can't read the response in no-cors mode
+      form.reset();
+      thankYouMessage.classList.remove("d-none");
+
+    } catch (err) {
+      alert("Network error. Please try again.");
+      console.error(err);
+    }
+  }
+
 </script>
