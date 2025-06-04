@@ -12,7 +12,7 @@
                         <img class="text-center" src="<?php echo IMAGES; ?>/real_logo_black.webp" width="55%" alt="Real Broker Logo">
                     </div>
                 </div>
-                <p class="mb-0 text-muted">&copy; <?php echo date('Y'); ?> <?php echo COMPANY_NAME; ?>. &nbsp;All rights reserved.<br>State Brokerage Name: Real Broker, LLC</p>
+                <p class="mb-0 text-muted">&copy; <?php echo date('Y'); ?> <?php echo COMPANY_NAME; ?>. &nbsp;All rights reserved.<br>Real Broker, LLC</p>
             </div>
         </footer>
     </body>

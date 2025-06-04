@@ -1,7 +1,7 @@
 <!-- Hero Section -->
 <section class="py-5 text-white" style="background: linear-gradient(135deg, #0d6efd, #0b5ed7);">
   <div class="container text-center">
-    <h1 class="display-4 fw-bold mb-3">End of School Promotion</h1>
+    <h1 class="display-4 fw-bold mb-3">Lock In a 5.25% Rate &ndash; Limited Time</h1>
     <p class="lead mb-4">
       Move into a beautiful 3-bedroom, 2-bath townhome with <strong>2,580 sq ft</strong> of thoughtfully designed living space — all for just <strong>$399,000</strong>.
     </p>
@@ -19,7 +19,7 @@
     </div>
 
     <p class="mb-0">
-      Secure your new home before summer ends — rates are limited, and homes are going fast.
+      Act Quickly &mdash; only available on limited homes.
     </p>
   </div>
 </section>
@@ -57,11 +57,11 @@
           <div class="text-center mb-5">
             <img src="<?php echo IMAGES; ?>/logo.webp" alt="Priority Homes Logo" style="max-height: 75px;">
           </div>
-          <p class="fs-5 fw-semibold text-dark mb-2">
+          <p class="fs-5 fw-semibold text-dark mb-2 text-center">
             This exclusive offer is only available through <strong>Priority Homes</strong>.
           </p>
-          <p class="text-danger fw-bold mb-0">
-            ⏳ Offer ends June 15th — don’t miss your chance!
+          <p class="text-danger fw-bold mb-0 text-center">
+            ⏳ Offer ends June 30th — don’t miss your chance!
           </p>
         </div>
       </div>
@@ -90,7 +90,7 @@
             <span class="fw-semibold text-dark">📍 Location:</span> Beautiful, peaceful Nephi, Utah
           </li>
           <li class="list-group-item px-0">
-            <span class="fw-semibold text-dark">🚚 Availability:</span> Move-in ready — close before summer ends
+            <span class="fw-semibold text-dark">🚚 Availability:</span> Move-in ready — close within 30 days
           </li>
         </ul>
       </div>
