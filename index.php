@@ -19,15 +19,15 @@ if (!file_exists($standardContent) && !file_exists($landingContent)) {
 switch ($page) {
     case 'home':
         $pageTitle = 'New Townhomes for Sale in Nephi, Utah | Priority Homes';
-        $metaTag = 'Explore modern, energy-efficient townhomes in Nephi’s Loveless Estates. Discover your dream home with Priority Homes today.';
+        $metaTag = 'Explore energy-efficient, 3-bedroom townhomes in Nephi’s Loveless Estates. Move-in ready homes near I-15.';
         break;
     case 'contact-us':
         $pageTitle = 'Contact Priority Homes';
-        $metaTag = '';
+        $metaTag = 'Contact Priority Homes about new construction townhouses in Nephi, UT';
         break;
     default:
         $pageTitle = 'Priority Homes';
-        $metaTag = '';
+        $metaTag = 'Nephi, UT | New construction townhomes';
         break;
 }
 
