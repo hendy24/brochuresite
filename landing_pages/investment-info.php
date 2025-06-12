@@ -1,23 +1,25 @@
 <!-- Hero Section -->
 <section class="py-5 text-white" style="background: linear-gradient(135deg, #0d6efd, #0b5ed7);">
   <div class="container text-center">
-    <h1 class="display-4 fw-bold mb-3">6 Turnkey Rental Units — 5.25% Cap Rate</h1>
+    <h1 class="display-4 fw-bold mb-3">6 Available Rental Units — 5.25% Cap Rate</h1>
     <p class="lead mb-4">
       Invest in new construction townhomes in Nephi, Utah — fully rent-ready and short-term approved. Just 30 minutes south of Provo.
     </p>
 
-    <div class="d-flex justify-content-center mb-4 flex-wrap gap-3">
-      <div class="bg-white text-dark px-4 py-3 rounded shadow-sm">
-        <strong>$389,900</strong><br>Per Unit
-      </div>
-      <div class="bg-white text-dark px-4 py-3 rounded shadow-sm">
-        <strong>$2,500/mo</strong><br>Market Rent
-      </div>
-      <div class="bg-white text-dark px-4 py-3 rounded shadow-sm">
-        <strong>5.25%</strong><br>Cap Rate
-      </div>
-    </div>
-
+<div class="d-flex justify-content-center mb-4 flex-wrap gap-3">
+  <div class="bg-white text-dark px-4 py-3 rounded shadow-sm text-center">
+    <strong style="font-size: 2.4rem;">$389,900</strong><br>
+    <span style="font-size: 1.1rem;">Per Unit</span>
+  </div>
+  <div class="bg-white text-dark px-4 py-3 rounded shadow-sm text-center">
+    <strong style="font-size: 2.4rem;">$2,500/mo</strong><br>
+    <span style="font-size: 1.1rem;">Market Rent</span>
+  </div>
+  <div class="bg-white text-dark px-4 py-3 rounded shadow-sm text-center">
+    <strong style="font-size: 2.4rem;">100%</strong><br>
+    <span style="font-size: 1.1rem;">Current Rental Occupancy</span>
+  </div>
+</div>
     <a href="#contact" class="btn btn-light btn-lg px-5">Request Rent Roll</a>
   </div>
 </section>
@@ -27,7 +29,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <img src="<?php echo IMAGES; ?>/exterior.webp" alt="Townhome Exterior" class="img-fluid rounded shadow">
+        <img src="<?php echo IMAGES; ?>/living_room.webp" alt="Townhome Living room" class="img-fluid rounded shadow">
       </div>
       <div class="col-lg-6 mt-4 mt-lg-0">
         <h2 class="fw-bold mb-3">Spacious, Modern Rentals</h2>
@@ -36,11 +38,9 @@
           ideal for long-term tenants or short-term guests. Short-term rentals are <strong>approved by the city</strong>, 
           giving you maximum flexibility.
         </p>
-        <ul class="list-unstyled mt-3">
-          <li>✅ 100% occupancy in current rentals</li>
+        <ul class="list-unstyled mt-3 fs-5">
           <li>✅ 30 minutes from Provo / Utah Valley growth corridor</li>
           <li>✅ Short-term rental permitted</li>
-          <li>✅ Professionally managed or self-managed options</li>
           <li>✅ New construction with builder warranty</li>
         </ul>
         <a href="#contact" class="btn btn-primary mt-4">See Financials</a>
