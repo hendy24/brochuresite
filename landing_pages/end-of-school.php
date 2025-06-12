@@ -127,3 +127,69 @@
     </div>
   </div>
 </section>
+
+<script>
+    const leadScriptURL = 'https://script.google.com/macros/s/AKfycbxrxvNRBBaXrxNiNGe9WWaySIKeZMuxRaAe-7aFoCUS39dAXTPbIWB27GAjjiihmdDk/exec';
+
+    document.getElementById("phone").addEventListener("input", function (e) {
+        formatPhoneInput(e.target);
+    });
+
+    function formatPhoneInput(input) {
+        const digits = input.value.replace(/\D/g, '').substring(0, 10);
+        let formatted = '';
+        if (digits.length > 0) formatted = '(' + digits.substring(0, 3);
+        if (digits.length >= 4) formatted += ') ' + digits.substring(3, 6);
+        if (digits.length >= 7) formatted += '-' + digits.substring(6, 10);
+        input.value = formatted;
+    }
+
+    const thankYouMessage = document.getElementById("thankYouMessage");
+
+    async function submitLeadForm(e) {
+        e.preventDefault();
+
+        const form = document.getElementById("leadForm");
+        const email = form.email.value.trim();
+        const phone = form.phone.value.trim();
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+
+        if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+        }
+
+        if (!phonePattern.test(phone)) {
+        alert("Please enter a valid phone number in the format (xxx) xxx-xxxx.");
+        return;
+        }
+
+        const formData = new FormData(form);
+        const payload = new URLSearchParams();
+        for (const pair of formData.entries()) {
+        payload.append(pair[0], pair[1]);
+        }
+
+        try {
+        await fetch(leadScriptURL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: payload.toString()
+        });
+
+        // We assume it succeeded, because we can't read the response in no-cors mode
+        form.reset();
+        thankYouMessage.classList.remove("d-none");
+
+        } catch (err) {
+        alert("Network error. Please try again.");
+        console.error(err);
+        }
+    }
+
+</script>
